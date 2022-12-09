@@ -1,0 +1,121 @@
+/****************************************************
+Sub-Section: Services-detailed (Hidden)
+****************************************************/
+/*
+.services-detailed h2 {
+margin: 8rem 3.2rem 3.2rem 0;
+font-size: 4.4rem;
+font-weight: 600;
+}
+
+.service-detailed-grid {
+display: grid;
+grid-template-columns: repeat(10, 1fr);
+width: 90%;
+margin: 0 auto;
+}
+
+.service-detailed-grid p {
+grid-column: 1 /-1;
+font-size: 3.6rem;
+font-weight: 600;
+margin: 8rem 0 4.8rem 0;
+text-align: center;
+}
+
+.service-detailed-grid img {
+width: 100%;
+overflow: visible;
+border-radius: 1.2rem;
+align-self: center;
+}
+.service-detailed-grid div {
+display: flex;
+flex-direction: column;
+align-self: center;
+
+font-size: 2.4rem;
+padding: 5% 10%;
+line-height: 1.5;
+}
+
+.service-detailed-grid img:nth-of-type(even) {
+grid-column: 1 / 5;
+}
+
+.service-detailed-grid div:nth-of-type(even) {
+grid-column: 5 /-1;
+}
+
+.service-detailed-grid div:nth-of-type(odd) {
+grid-column: 1 / 7;
+}
+
+.service-detailed-grid img:nth-of-type(odd) {
+grid-column: 7 / -1;
+}
+
+
+<div class="services-detailed">
+    <h2>What is included in our cleaning services</h2>
+</div>
+<div class="service-detailed-grid">
+    <p>Kitchens</p>
+    <div>
+        <ul>
+            <li>Clean sink</li>
+            <li> Vacuum and mop floors</li>
+            <li> Wash dishes or load dishwasher</li>
+            <li> Wipe handles and switches</li>
+            <li> Take out rubbish</li>
+            <li> Wipe exterior of kitchen cupboard even fridge</li>
+            <li> Clean microwave interior + exterior</li>
+            <li> Wipe countertops</li>
+            <li> Laundry (if requested)</li>
+        </ul>
+    </div>
+    <img src="/Round2/img/services/dusting2.jpg" alt="">
+
+    <p>Bathrooms</p>
+    <img src="/Round2/img/services/dusting2.jpg" alt="">
+    <div>
+        <ul>
+            <li>Scrub shower, bath, sink</li>
+            <li> Empty rubbish bins</li>
+            <li>Clean toilet</li>
+            <li> Clean cabinet exterior, mirrors</li>
+            <li> Vacuum and mop floors</li>
+            <li> Dusting all surfaces</li>
+        </ul>
+    </div>
+
+
+    <p>Bedrooms</p>
+    <div class="service-detailed-textbox">
+        <ul>
+            <li> Clean mirrors</li>
+            <li>Wipe handles, doors, switches</li>
+            <li> Taking out rubbish</li>
+            <li> Vacuum and mop floors</li>
+            <li> Dust and wipe accessible surface</li>
+            <li> Organise and fold your clothes</li>
+            <li> Cleaners will tidy the bed</li>
+        </ul>
+    </div>
+    <img src="/Round2/img/services/dusting2.jpg" alt="">
+
+
+    <p>living Areas</p>
+    <img src="/Round2/img/services/dusting2.jpg" alt="">
+    <div>
+        <Clean>
+            <li>Clean mirrors / windows (inside)</li>
+            <li> Wipe switches and handles</li>
+            <li> Vacuum and mop floors</li>
+            <li>Cleaning the doors</li>
+            <li>Wipe all accessible glass</li>
+            <li> Dusting the furniture and surfaces</li>
+            </ul>
+    </div>
+</div> */
+/***********************/
