@@ -119,3 +119,126 @@ grid-column: 7 / -1;
     </div>
 </div> */
 /***********************/
+
+/* The container for the nav burger */
+.nav-menu__box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  /* transition: all 0.5s ease-in-out; */
+}
+
+.nav-menu-btn__text {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* Create the burger icon */
+/* Create middle line / PARENT */
+.nav-menu-btn__burger {
+  width: 4rem;
+  height: 0.6rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  transition: transform 5s ease-in-out;
+}
+
+/* create top/bottom line */
+.nav-menu-btn__burger::before,
+.nav-menu-btn__burger::after {
+  content: "";
+  position: absolute;
+  width: 4rem;
+  height: 0.6rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  transition: all 0.5s linear 0.25s;
+}
+
+/* position top/bottom line */
+.nav-menu-btn__burger::before {
+  transform: translateY(-1rem);
+}
+.nav-menu-btn__burger::after {
+  transform: translateY(1rem);
+}
+
+/* animate burger NOTE: JS added to toggle menu open/closed */
+
+/* open */
+.nav-menu__box.open .nav-menu-btn__burger {
+  animation: fade 0.5s linear;
+  animation-fill-mode: forwards;
+}
+
+.nav-menu__box.open .nav-menu-btn__burger::before {
+  animation: openBurgerTop 0.5s linear;
+  animation-fill-mode: forwards;
+}
+
+.nav-menu__box.open .nav-menu-btn__burger::after {
+  animation: openBurgerBottom 0.5s linear;
+  animation-fill-mode: forwards;
+}
+
+.nav-menu__box.close .nav-menu-btn__burger {
+  animation: fade 0.5s linear reverse;
+  animation-fill-mode: forwards;
+}
+
+.nav-menu__box.close .nav-menu-btn__burger::before {
+  animation: openBurgerBottom 0.5s linear reverse;
+  animation-fill-mode: forwards;
+}
+.nav-menu__box.close .nav-menu-btn__burger::after {
+  animation: openBurgerTop 0.5s linear reverse;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade {
+  100% {
+    background: none;
+  }
+}
+@keyframes openBurgerTop {
+  50% {
+    transform: translateY(0rem);
+  }
+  100% {
+    transform: rotate(45deg) translateY(0rem);
+  }
+}
+@keyframes openBurgerBottom {
+  50% {
+    transform: translateY(0rem);
+  }
+  100% {
+    transform: rotate(-45deg) translateY(0rem);
+  }
+}
+
+/* fullscreen menu */
+.nav-menu__fullscreen-menu {
+  display: none;
+}
+
+.nav-menu__fullscreen-menu.open {
+  display: block;
+  position: fixed;
+  min-height: 100%;
+  min-width: 100%;
+  background-color: #292b23;
+  z-index: 1;
+}
+
+.nav-menu__fullscreen-menu-list {
+  margin: auto;
+}
+/* .nav-menu__fullscreen-menu {
+  background-color: green;
+  color: purple;
+} */
