@@ -205,19 +205,25 @@ grid-column: 7 / -1;
   }
 }
 @keyframes openBurgerTop {
-  50% {
+  40% {
+    transform: translateY(0rem);
+  }
+  60% {
     transform: translateY(0rem);
   }
   100% {
-    transform: rotate(45deg) translateY(0rem);
+    transform: rotate(45deg);
   }
 }
 @keyframes openBurgerBottom {
-  50% {
+  40% {
+    transform: translateY(0rem);
+  }
+  60% {
     transform: translateY(0rem);
   }
   100% {
-    transform: rotate(-45deg) translateY(0rem);
+    transform: rotate(-45deg);
   }
 }
 

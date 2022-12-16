@@ -18,8 +18,27 @@
 </head>
 
 <body>
+    <div class="contact-form-container">
+        <h3>Contact Us</h3>
+        <form action="/" class="user-form">
+            <input type="text" id="fname" name="fname" placeholder="First Name" required>
+            <input type="text" id="lname" name="lname" placeholder="Last Name" required>
+            <input type="email" id="email" name="email" placeholder="Email Address" required>
+            <input type="tel" id="tel" name="tel" placeholder="Phone Number">
+            <textarea name="Enquiry" placeholder="Let us know how we can help..." minlength="30" maxlength="5000"
+                rows="3" required></textarea>
+            <input class="form-submit-btn" type="submit" placeholder="Submit">
+        </form>
+        <ion-icon class="close-icon" name="close-outline"></ion-icon>
+    </div>
 
     <header>
+
+        <div class="discount-banner">
+
+        </div>
+
+
         <div class="header-container centered">
             <nav class="main-nav">
                 <img class="img-logo" src="/Round2/img/logo-png.png" alt="Valley Pro Cleaning Logo" />
@@ -37,6 +56,7 @@
                             <img class="img-logo" src="/Round2/img/logo-png.png" alt="Valley Pro Cleaning Logo" />
                             <p> Valley Pro Cleaning Services
                             </p>
+                            <ion-icon class="social-icons" name="logo-facebook"></ion-icon>
                         </div>
                         <ul class="nav-fullscreen-rightCol">
                             <li class="nav-list-item">Services</li>
@@ -51,7 +71,7 @@
                             <p> Check out our social media profiles for before/after photos, amazing customer reviews
                                 and latest updates
                             </p>
-                            <ion-icon class="social-icons" name="logo-facebook"></ion-icon>
+
                         </div>
                     </div>
                 </div>
@@ -63,11 +83,8 @@
         <div class="sticky-bar"></div>
         <section class="section-hero">
             <div class="hero-text-box">
-                <h1> Take back your life! </h1>
-                <p>Make time for the most important things in your life. Leave the cleaning to a pro! </p>
-                <div class="hero-btn-box">
-                    <a class="btn btn--filled" href="#">Get a quote</a>
-                </div>
+                <h1>Make time for the most important things in your life</h1>
+                <p>Bring in the pros and Leave the cleaning to a pro! </p>
             </div>
         </section>
 
@@ -79,6 +96,9 @@
                 <div class="btn btn-service btn--filled">Residential</div>
                 <div class="btn btn-service">Commercial</div>
             </div>
+
+
+
             <div class="service-list-wrapper">
                 <div class="service-list">
                     <div class="service-list-item">
@@ -178,57 +198,46 @@
         </section>
 
         <section class="section-about">
-            <h2>About Valley Pro Cleaning</h2>
-            <div class="about-us-wrapper">
-                <div class="who-we-are-textbox">
-                    <h3>Who we are</h3>
-                    <p class="about-intro-text">Since 2015, Valley Pro cleaning has been providing world class
-                        residential
-                        and
-                        commercial cleaning
-                        services throughout the greater Ottawa Valley area <br> <br>lorm Lorem ipsum dolor sit amet
-                        consectetur
-                        adipisicing elit. Quam, corrupti nesciunt! Vitae, ratione.
-                        Enim doloremque totam ad libero. Rem recusandae exercitationem dolor doloremque amet quibusdam
-                        quis
-                        nulla aliquam autem fugiat.</p>
+            <h2>Why Valley Pro</h2>
+            <p class="why-text">Since 2015, Valley Pro cleaning has been providing world class
+                residential
+                and commercial cleaning
+                services throughout
+                the greater Ottawa Valley area</p>
+            </div>
+            <div class="why-list">
+                <div class="why-item">
+                    <ion-icon class="icon-why" name="infinite-outline"></ion-icon>
+                    <p class="why-label">Flexible Scheduling</p>
+                    <p class="why-text">Available 24/7 for all your cleaning needs</p>
+                    <!-- we work 7 days a week from 8am to 8pm</p> -->
                 </div>
-                <div>
-                    <h3 class="h3-centered">Why Valley Pro</h3>
-                    <div class="why-list">
-                        <div class="why-item">
-                            <ion-icon class="icon-why" name="infinite-outline"></ion-icon>
-                            <p class="why-label">Flexible Scheduling</p>
-                            <p class="why-text">Available 24/7 for all your cleaning needs</p>
-                            <!-- we work 7 days a week from 8am to 8pm</p> -->
-                        </div>
-                        <div class="why-item">
-                            <ion-icon class="icon-why" name="ribbon-outline"></ion-icon>
-                            <p class="why-label">Licensed and Insured</p>
-                            <p class="why-text">Insurance covers unlikely events up to $2M</p>
-                        </div>
-                        <div class="why-item">
-                            <ion-icon class="icon-why" name="happy-outline"></ion-icon>
-                            <p class="why-label">100% Satisfaction Guaranteed</p>
-                            <p class="why-text">backed by our 24-hour Inspection Policy </p>
-                        </div>
-                        <div class="why-item">
-                            <ion-icon class="icon-why" name="wallet-outline"></ion-icon>
-                            <p class="why-label"> No hidden fees, ever!</p>
-                            <p class="why-text">The price we quote is the price you pay</p>
-                        </div>
-                        <div class="why-item">
-                            <ion-icon class="icon-why" name="calendar-outline"></ion-icon>
-                            <p class="why-label"> 12+ years of operations</p>
-                            <p class="why-text">Providing cleaning services since 2015</p>
-                        </div>
-                        <div class="why-item">
-                            <ion-icon class="icon-why" name="heart-outline"></ion-icon>
-                            <p class="why-label">Family run business</p>
-                            <p class="why-text">Husband and wife owned and managed</p>
-                        </div>
-                    </div>
+                <div class="why-item">
+                    <ion-icon class="icon-why" name="ribbon-outline"></ion-icon>
+                    <p class="why-label">Licensed and Insured</p>
+                    <p class="why-text">Insurance covers unlikely events up to $2M</p>
                 </div>
+                <div class="why-item">
+                    <ion-icon class="icon-why" name="happy-outline"></ion-icon>
+                    <p class="why-label">100% Satisfaction Guaranteed</p>
+                    <p class="why-text">backed by our 24-hour Inspection Policy </p>
+                </div>
+                <div class="why-item">
+                    <ion-icon class="icon-why" name="wallet-outline"></ion-icon>
+                    <p class="why-label"> No hidden fees, ever!</p>
+                    <p class="why-text">The price we quote is the price you pay</p>
+                </div>
+                <div class="why-item">
+                    <ion-icon class="icon-why" name="calendar-outline"></ion-icon>
+                    <p class="why-label"> 12+ years of operations</p>
+                    <p class="why-text">Providing cleaning services since 2015</p>
+                </div>
+                <div class="why-item">
+                    <ion-icon class="icon-why" name="heart-outline"></ion-icon>
+                    <p class="why-label">Family run business</p>
+                    <p class="why-text">Husband and wife owned and managed</p>
+                </div>
+            </div>
             </div>
         </section>
 
@@ -244,8 +253,6 @@
                 <ion-icon class="testimony-btn testimony-nav-right" name="chevron-forward-outline"></ion-icon>
             </div>
 
-
-
             <div class="testimony-count-icons-box">
                 <div class="testimony-count-icons"></div>
                 <div class="testimony-count-icons active"></div>
@@ -254,11 +261,43 @@
                 <div class="testimony-count-icons"></div>
                 <div class="testimony-count-icons"></div>
             </div>
-            </div>
+
 
         </section>
     </main>
-    <footer></footer>
+    <footer class="section-footer">
+        <div class="footer-wrapper">
+            <ul class="footer-address-box">
+                <li> Valley Pro Cleaning</li>
+                <li> Foresters Falls</li>
+                <li> Ontario, POSTALCODE</li>
+                <li>
+                    <ion-icon name="time-outline"></ion-icon> &nbsp; Monday to Friday 8am-6pm
+                </li>
+                <li>
+                    <ion-icon name="call-outline"></ion-icon> &nbsp; 613.646.0008
+                </li>
+                <li>
+                    <ion-icon name="mail-outline"></ion-icon> &nbsp; valleyprocleaning@outlook.com
+                </li>
+                <li class="social-icon">
+                    <ion-icon class="footer-social-icons" name="logo-facebook"></ion-icon>
+                </li>
+            </ul>
+            <div class="discount">
+                <p>Call today to get a free estimate </p>
+                <p>and get </p>
+                <p>10% off your first cleaning</p>
+            </div>
+            <div class="client-logo-box">
+                <img src="/Round2/img/Clients/HH Logo.jpg" alt="">
+                <img src="/Round2/img/Clients/HH Logo.jpg" alt="">
+                <img src="/Round2/img/Clients/HH Logo.jpg" alt="">
+            </div>
+        </div>
+
+
+    </footer>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="main.js"></script>
